@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anupam Kaushik | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f4f4;
+      --text: #333;
+      --accent: #007acc;
+      --card-bg: #ffffff;
+      --card-hover: rgba(0, 122, 204, 0.1);
+      --border: #e0e0e0;
+      --header-gradient: linear-gradient(45deg, #007acc, #4e9fd1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+      font-size: 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 4rem;
+      padding: 2rem 1.5rem;
+      background: var(--header-gradient);
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 0.3rem;
+      display: inline-block;
+    }
+
+    p, li {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .project, .contact {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      margin-top: 1.5rem;
+      border: 1px solid var(--border);
+    }
+
+    .project:hover, .contact:hover {
+      transform: translateY(-6px);
+      background-color: var(--card-hover);
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #005b9f;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: var(--accent);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #005b9f;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Anupam Kaushik</h1>
+    <p>Software Development Student | Web Developer</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm a student at Dronacharya College of Engineering and a software development enthusiast with a passion for crafting engaging web experiences. Eagerly learning the latest technologies to build user-friendly websites using HTML, CSS, and JavaScript.
+    </p>
+  </section>
+
+  <section>
+    <h2>Tech Stack</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>A simple weather web app that shows real-time weather data using the OpenWeatherMap API. Built with HTML, CSS, and JavaScript.</p>
+      <a class="cta-button" href="https://github.com/sample/weather-app" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A clean, responsive personal portfolio site to showcase skills and projects. Built using semantic HTML, modern CSS, and a touch of JavaScript.</p>
+      <a class="cta-button" href="https://github.com/sample/portfolio-site" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>Todo List App</h3>
+      <p>A lightweight and intuitive todo app for managing daily tasks. Features task creation, completion toggle, and local storage. Built with HTML, CSS, and vanilla JavaScript.</p>
+      <a class="cta-button" href="https://github.com/sample/todo-app" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Email: <em>anupam@example.com</em></p>
+      <p>GitHub: <a href="https://github.com/AnupamGit-hub" target="_blank">AnupamGit-hub</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/anupam-kaushik-91828b32a" target="_blank">anupam-kaushik-91828b32a</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Anupam Kaushik. All rights reserved.
+  </footer>
+</body>
+</html>
+
